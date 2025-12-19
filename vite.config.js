@@ -16,7 +16,7 @@ export default defineConfig(({ mode }) => {
         //    'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY)
         //},
 		
-		base: "/pisica_React/" // add this if your repo is like https://github.com/ginoongflores/project-1)
+		base: "/pisica_React/", // add this if your repo is like https://github.com/ginoongflores/project-1)
 		
         resolve: {
             alias: {
