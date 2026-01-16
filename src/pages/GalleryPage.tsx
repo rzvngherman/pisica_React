@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { GalleryItem } from '../types';
 import { ZoomIn } from 'lucide-react';
-import meta from '../images.meta.json';
 
 export const GalleryPage: React.FC = () => {
     const images_a4 = import.meta.glob(
@@ -15,11 +14,6 @@ export const GalleryPage: React.FC = () => {
             as: 'url'
         }
     );
-    const imageList_2 = Object.values(images_a4).map((url, index) => ({
-        id: (index+1),
-        url,
-        caption: (index + 1)
-    }));
 
     const imageList: GalleryItem[] = Object.entries(images_a4)
         .sort(([a], [b]) => a.localeCompare(b))

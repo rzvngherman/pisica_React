@@ -63,7 +63,7 @@ const ContactPage: React.FC = () => {
                   </div>
                   <div>
                     <p className="font-medium text-stone-900">Email</p>
-                    <p className="text-stone-600 text-sm">meow@boticmatescu.cat</p>
+                    <p className="text-stone-600 text-sm">miau@boticmatescu.razvangherman.com</p>
                   </div>
                 </div>
               </div>

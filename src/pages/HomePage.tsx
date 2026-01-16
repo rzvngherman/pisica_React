@@ -37,15 +37,15 @@ const HomePage: React.FC = () => {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-6">
               <div className="flex flex-col items-center p-4 bg-white rounded-xl shadow-sm border border-stone-100">
                 <div className="bg-orange-100 p-3 rounded-full mb-3 text-orange-600">
-                  <Fish size={24} />
+                  <img src="src/elastic_de_par2.png" style={{height: '24px'}}></img>
                 </div>
-                <span className="font-semibold text-stone-800">Iubitor de elastic de par</span>
+                <span className="font-semibold text-stone-800">Iubitor de elastic de păr</span>
               </div>
               <div className="flex flex-col items-center p-4 bg-white rounded-xl shadow-sm border border-stone-100">
                 <div className="bg-orange-100 p-3 rounded-full mb-3 text-orange-600">
                   <Box size={24} />
                 </div>
-                <span className="font-semibold text-stone-800">Expert in cutii</span>
+                <span className="font-semibold text-stone-800">Expert în cutii</span>
               </div>
               <div className="flex flex-col items-center p-4 bg-white rounded-xl shadow-sm border border-stone-100">
                 <div className="bg-orange-100 p-3 rounded-full mb-3 text-orange-600">
