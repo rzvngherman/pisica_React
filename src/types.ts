@@ -8,6 +8,7 @@ export interface GalleryItem {
   id: number;
   url: string;
   caption: string;
+  added_date: Date
 }
 
 export interface ContactFormState {
