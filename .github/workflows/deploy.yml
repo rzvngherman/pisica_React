@@ -30,15 +30,17 @@ jobs:
           node-version: '20' # Use the Node.js version your project requires
 
       - name: Install dependencies
+        working-directory: ./pisica_react_local_fe
         run: npm install
 
       - name: Build project
+        working-directory: ./pisica_react_local_fe
         run: npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist' # Upload the build output directory
+          path: './pisica_react_local_fe/dist' # Upload the build output directory
 
       - name: Deploy to GitHub Pages
         id: deployment
