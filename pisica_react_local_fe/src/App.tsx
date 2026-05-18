@@ -1,24 +1,31 @@
 //import React, { useState } from 'react';
 import * as React from 'react';
 import { useState, useEffect, FC } from 'react';
+
 import Header from './components/Header';
 import Footer from './components/Footer';
+
 import HomePage from './pages/HomePage';
 import GalleryPage from './pages/GalleryPage';
 import ContactPage from './pages/ContactPage';
+//import GalleryPage2 from './pages/GalleryPage2';
+import { GalleryPage2 } from './pages/GalleryPage2';
+
 import { PageRoute } from './types';
 
 const App: React.FC = () => {
-    const [currentPage, setCurrentPage] = useState<PageRoute>(PageRoute.HOME);
+    const [currentPage, setCurrentPage] = useState<PageRoute>(PageRoute.GALLERY);
 
     const renderContent = () => {
         switch (currentPage) {
             case PageRoute.HOME:
                 return <HomePage />;
-            case PageRoute.GALLERY:
-                return <GalleryPage />;
+            //case PageRoute.GALLERY:
+            //    return <GalleryPage />;
             case PageRoute.CONTACT:
                 return <ContactPage />;
+            case PageRoute.GALLERY2:
+                return <GalleryPage2 />;
             default:
                 return <HomePage />;
         }

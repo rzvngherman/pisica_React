@@ -2,10 +2,9 @@ import React, { useState } from 'react';
 import { GalleryItem } from '../types';
 import { ZoomIn } from 'lucide-react';
 
-export const GalleryPage: React.FC = () => {
+export const GalleryPage_NOT_USED: React.FC = () => {
     const images_a4 = import.meta.glob(
         [
-            // absolute path from-src:
             '/src/assets/imgs/2025/*.{png,jpg,jpeg,webp}',
             '/src/assets/imgs/2026/*.{png,jpg,jpeg,webp}',
         ],
@@ -19,6 +18,7 @@ export const GalleryPage: React.FC = () => {
         .sort(([a], [b]) => a.localeCompare(b))
         .map(([, url], index) => ({
             id: (index + 1),
+            fileName: (index + 1),
             url,
             caption: String(index + 1),
             added_date: new Date() // build time //new Date(meta[name])
@@ -33,6 +33,9 @@ export const GalleryPage: React.FC = () => {
                 <h2 className="text-4xl font-bold text-stone-900 font-serif">O viață în imagini</h2>
                 <p className="mt-4 text-lg text-stone-600 max-w-2xl mx-auto">
                     Imagini exclusive din culise cu programul foarte încărcat de somn și mâncat al lui Botic Mâțescu.
+                </p>
+                <p className="mt-4 text-lg text-stone-600 max-w-2xl mx-auto">
+                    ({imageList.length } imagini)
                 </p>
             </div>
 
@@ -92,4 +95,4 @@ export const GalleryPage: React.FC = () => {
     );
 };
 
-export default GalleryPage;
+export default GalleryPage_NOT_USED;

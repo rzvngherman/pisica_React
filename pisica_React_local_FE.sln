@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36603.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "pisica_react_local_fe", "pisica_react_local_fe\pisica_react_local_fe.esproj", "{15AF8AEA-2028-E457-698E-4158D50614CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication4_WebApi", "pisica_BE_Webapi\WebApplication4_WebApi.csproj", "{0E083B88-1E6E-2799-1488-FD6158E51695}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuget", "nuget", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		nuget.config = nuget.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Read Me", "Read Me", "{4C42F5FE-681F-495A-944A-0DA63F837FF1}"
+	ProjectSection(SolutionItems) = preProject
+		pisica_react_local_fe\README_FE.md = pisica_react_local_fe\README_FE.md
+		pisica_BE_Webapi\read_me_BE.txt = pisica_BE_Webapi\read_me_BE.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15AF8AEA-2028-E457-698E-4158D50614CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15AF8AEA-2028-E457-698E-4158D50614CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15AF8AEA-2028-E457-698E-4158D50614CF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{15AF8AEA-2028-E457-698E-4158D50614CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15AF8AEA-2028-E457-698E-4158D50614CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15AF8AEA-2028-E457-698E-4158D50614CF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{0E083B88-1E6E-2799-1488-FD6158E51695}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E083B88-1E6E-2799-1488-FD6158E51695}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E083B88-1E6E-2799-1488-FD6158E51695}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E083B88-1E6E-2799-1488-FD6158E51695}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EAABF716-E706-406B-AF35-3E78FD52D251}
+	EndGlobalSection
+EndGlobal

@@ -1,6 +1,8 @@
 ﻿import React, { useState } from 'react';
 import { Send, Mail, MapPin, Phone } from 'lucide-react';
 import { ContactFormState } from '../types';
+//import nodemailer from 'nodemailer';
+//import { defineConfig, loadEnv } from 'vite';
 
 const ContactPage: React.FC = () => {
   const [formData, setFormData] = useState<ContactFormState>({
@@ -10,7 +12,7 @@ const ContactPage: React.FC = () => {
   });
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success'>('idle');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setStatus('submitting');
     
@@ -18,10 +20,45 @@ const ContactPage: React.FC = () => {
     setTimeout(() => {
       setStatus('success');
       setFormData({ name: '', email: '', message: '' });
-      
+
       // Reset success message after 5 seconds
       setTimeout(() => setStatus('idle'), 5000);
-    }, 1500);
+      }, 1500);
+
+      //const form = e.currentTarget;
+      //const data = {
+      //    name: (form.elements.namedItem("name") as HTMLInputElement).value,
+      //    email: (form.elements.namedItem("email") as HTMLInputElement).value,
+      //    message: (form.elements.namedItem("message") as HTMLTextAreaElement).value
+      //};
+
+      //console.log(data);
+      ////console.log(import.meta.env.EMAIL_USER);
+      ////console.log(process.env.EMAIL_USER);
+
+      ////const transporter = NodeMailer.createTransport({
+      ////    host: process.env.SMTP_HOST,
+      ////    port: process.env.SMTP_PORT,
+      ////    //secure: false,
+      ////    auth: {
+      ////        user: process.env.EMAIL_USER,
+      ////        pass: process.env.EMAIL_PASS
+      ////    }
+      ////});
+
+      //const pass1 = "";
+      ////const transporter = nodemailer.createTransport({
+      ////    host: "mail.boticmatescu.razvangherman.com",
+      ////    port: 587,
+      ////    //secure: false,
+      ////    auth: {
+      ////        user: "miau@boticmatescu.razvangherman.com",
+      ////        pass: pass1
+      ////    }
+      ////});
+      ////const transporter = nodemailer.createTransport();
+      //setStatus('success');
+      //setFormData({ name: '', email: '', message: '' });
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {

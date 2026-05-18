@@ -12,8 +12,10 @@ const Header: React.FC<HeaderProps> = ({ currentPage, onNavigate }) => {
 
   const navItems = [
     { label: 'Acasa', value: PageRoute.HOME },
-    { label: 'Photo', value: PageRoute.GALLERY },
+    //{ label: 'Photo', value: PageRoute.GALLERY },
     { label: 'Contact', value: PageRoute.CONTACT },
+      { label: 'Photo', value: PageRoute.GALLERY2 }, //was test page
+
   ];
 
   const toggleMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);

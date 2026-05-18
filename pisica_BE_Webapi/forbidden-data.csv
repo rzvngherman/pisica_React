@@ -1,0 +1,16 @@
+﻿Text,Category
+"I have cancer",Disease
+"He is HIV positive",Disease
+"She suffers from diabetes",Disease
+
+"He is Asian",Race
+"She is African American",Race
+"That person is white",Race
+
+"I support the conservative party",Politics
+"He voted for democrats",Politics
+"I am a liberal",Politics
+
+"This is a nice day",None
+"I like pizza",None
+"Let’s go shopping",None

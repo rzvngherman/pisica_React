@@ -1,28 +1,10 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
 
-node_modules
-dist
-dist-ssr
-*.local
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+/pisica_react_local_fe/.env
 .vs/
-obj/
-/src/assets/imgs
-.env
+pisica_BE_Webapi/bin/
+pisica_BE_Webapi/obj/
+pisica_BE_Webapi/images/2025/
+pisica_BE_Webapi/images/2026/
