@@ -15,4 +15,7 @@
   <ItemGroup>
     <None Remove="README_FE.md" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\assets\imgs\other\" />
+  </ItemGroup>
 </Project>

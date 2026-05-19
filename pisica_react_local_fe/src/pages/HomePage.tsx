@@ -8,7 +8,7 @@ const HomePage: React.FC = () => {
       <div className="relative bg-stone-900 h-[500px] flex items-center justify-center overflow-hidden">
              {/* src="https://picsum.photos/1600/900?grayscale" */}
         <img 
-          src="/imgs/other/973-1600x900-grayscale.jpg" 
+          src="src/973-1600x900-grayscale.jpg" 
           alt="Botic Mâțescu Hero" 
           className="absolute inset-0 w-full h-full object-cover opacity-40"
         />
@@ -61,7 +61,7 @@ const HomePage: React.FC = () => {
              <div className="absolute -inset-4 bg-orange-200 rounded-2xl transform rotate-3 transition-transform hover:rotate-2"></div>
                      {/* src="https://picsum.photos/600/800" */}
             <img 
-              src="/imgs/other/661-600x800.jpg" 
+              src="src/661-600x800.jpg" 
               alt="Botic Portrait" 
               className="relative rounded-xl shadow-xl w-full object-cover h-[500px] hover:scale-[1.01] transition-transform duration-500"
             />

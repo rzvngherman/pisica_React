@@ -37,8 +37,13 @@ namespace WebApplication4_WebApi.Controllers
                 var creationTime = f.CreationTime;
                 var year = Path.GetFileName(Path.GetDirectoryName(file));
                 var fileName = Path.GetFileName(file);
+
+                var guidname = Guid.NewGuid().ToString();
+                var id = guidname.Replace("-", "");
+
                 return new GetAllImagesResponse
                 {
+                    CatIdd = id,
                     Name = fileName,
                     Url = $"{baseUrl}/DirectoryImages/{year}/{fileName}",
                     CreationTime = creationTime,
@@ -53,6 +58,7 @@ namespace WebApplication4_WebApi.Controllers
 
     public class GetAllImagesResponse
     {
+        public string CatIdd { get; set; }
         public string Name { get; set; }
         public string Url { get; set; }
         public DateTime CreationTime { get; set; }
