@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-stone-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
           <p>&copy; {new Date().getFullYear()} Botic Mâțescu. All rights reserved.</p>
           <p className="flex items-center gap-1 mt-2 md:mt-0">
-            Made with <Heart size={14} className="text-red-500 fill-current" /> by his human servants.
+            Făcut cu <Heart size={14} className="text-red-500 fill-current" /> de slujitorii săi umani.
           </p>
         </div>
       </div>

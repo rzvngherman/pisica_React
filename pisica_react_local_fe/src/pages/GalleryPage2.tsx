@@ -11,10 +11,12 @@ export const GalleryPage2: React.FC = () => {
     const loading = test.loading;
 
     const imageList: GalleryItem[] = Object.entries(images_a4)
-        .sort(([a], [b]) => a.localeCompare(b))
+        //.sort(([, a], [, b]) => a.name.localeCompare(b.name)) //asc
+        .sort(([, a], [, b]) => b.name.localeCompare(a.name)) //desc
         .map(([, images_response], index) => ({
-            id: (index + 1),
-            fileName: images_response.name,
+            //id: (index + 1),
+            id: images_response.catidd,
+            //fileName: images_response.name,
             url: images_response.url,
             caption: String(index + 1),
             added_date: images_response.creationTime //new Date() // build time //new Date(meta[name])
@@ -55,7 +57,7 @@ export const GalleryPage2: React.FC = () => {
                             </div>
                         </div>
                         <div className="p-4 border-t border-stone-100">
-                            <p className="text-stone-700 font-medium text-center">{img.fileName}</p>
+                            <p className="text-stone-700 font-medium text-center"></p>
                         </div>
                     </div>
                 ))}
@@ -76,7 +78,7 @@ export const GalleryPage2: React.FC = () => {
                             alt={selectedImage.caption}
                             className="max-h-[80vh] w-auto rounded-lg shadow-2xl"
                         />
-                        <p className="mt-4 text-white text-xl font-light tracking-wide">{selectedImage.fileName}</p>
+                        <p className="mt-4 text-white text-xl font-light tracking-wide"></p>
                         <button
                             className="absolute -top-12 right-0 text-white hover:text-orange-400 transition-colors"
                             onClick={() => setSelectedImage(null)}

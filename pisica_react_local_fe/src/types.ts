@@ -7,7 +7,7 @@ export enum PageRoute {
 
 export interface GalleryItem {
   id: number;
-  fileName: string;
+  //fileName: string;
   url: string;
   caption: string;
   added_date: Date
